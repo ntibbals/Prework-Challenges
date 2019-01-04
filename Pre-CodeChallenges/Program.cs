@@ -166,6 +166,32 @@ namespace Pre_CodeChallenges
                 }
             }
 
+            Console.WriteLine("Your matrix is: ");
+            for (int i = 0; i < rows; i++)
+            {
+                Console.Write("{");
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{string.Join(", ", myArray[i, j])},");
+                }
+                Console.Write("} ");
+            }
+
+            int[] sumArray = new int[myArray.GetLength(0)];
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                int sum = 0;
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    sum += myArray[i, j];
+                }
+                sumArray[i] = sum;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"The sum of each row in your matrix is: [{string.Join(", ", sumArray)}]");
+            Console.ReadLine();
         }
 
     }
