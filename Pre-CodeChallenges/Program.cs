@@ -17,6 +17,7 @@ namespace Pre_CodeChallenges
             Console.Clear();
             Console.WriteLine("Choose an option: ");
             Console.WriteLine("1) Array Max Result");
+            Console.WriteLine("1) Array Max Result");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -25,7 +26,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "2")
             {
-               
+                LeapYearCalc();
                 return true;
             }
             else if (result == "3")
@@ -68,6 +69,11 @@ namespace Pre_CodeChallenges
             }
             Console.WriteLine("Your score is {0}!", score);
             Console.ReadLine();
+
+        }
+        private static void LeapYearCalc()
+        {
+
 
         }
     }

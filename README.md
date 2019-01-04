@@ -13,3 +13,9 @@ https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=netframew
 ##SUCCESSFUL TEST BELOW
 
 ![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge1-Screenshot.PNG)
+
+###Problem 2: Leap Year Calculator
+
+Instructions: Given a year, calculate based on the Gregorian calnedar whether it is a leap year or not.
+
+Resources: 
