@@ -21,3 +21,9 @@ Instructions: Given a year, calculate based on the Gregorian calnedar whether it
 Resources: 
 
 https://www.youtube.com/watch?v=xX96xng7sAE
+
+##SUCCESSFUL TEST BELOW
+
+![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge2-negative-leap.PNG)
+
+![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge2-negative-leap.PNG)
