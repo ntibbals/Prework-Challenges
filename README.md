@@ -19,3 +19,5 @@ https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=netframew
 Instructions: Given a year, calculate based on the Gregorian calnedar whether it is a leap year or not.
 
 Resources: 
+
+https://www.youtube.com/watch?v=xX96xng7sAE
