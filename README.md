@@ -38,6 +38,10 @@ https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?re
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generics-and-arrays
 
+https://stackoverflow.com/questions/199470/whats-the-main-difference-between-int-parse-and-convert-toint32
+
+https://www.tutorialspoint.com/csharp/csharp_arrays.htm
+
 ##SUCCESSFUL TEST BELOW
 
 ![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge3-screenshot.PNG)
@@ -49,3 +53,10 @@ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generi
 Instructions: Given a matrix of integers, return the sum of each row in a single dimensional array.
 
 Resources:
+
+https://docs.microsoft.com/en-us/dotnet/api/system.array.getlength?view=netframework-4.7.2
+
+https://docs.microsoft.com/en-us/dotnet/api/system.string.join?view=netframework-4.7.2
+
+##SUCCESSFUL TEST BELOW
+![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge4-Screenshot.PNG)

@@ -172,7 +172,7 @@ namespace Pre_CodeChallenges
                 Console.Write("{");
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.Write($"{string.Join(", ", myArray[i, j])},");
+                    Console.Write($"{String.Join(", ", myArray[i, j])}, ");
                 }
                 Console.Write("} ");
             }
@@ -190,7 +190,7 @@ namespace Pre_CodeChallenges
             }
 
             Console.WriteLine();
-            Console.WriteLine($"The sum of each row in your matrix is: [{string.Join(", ", sumArray)}]");
+            Console.WriteLine($"The sum of each row in your matrix is: [{String.Join(", ", sumArray)}]");
             Console.ReadLine();
         }
 
