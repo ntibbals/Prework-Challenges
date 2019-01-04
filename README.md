@@ -44,3 +44,8 @@ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generi
 
 ![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge3-negative-result.PNG)
 
+###Problem 4: Sum of Rows
+
+Instructions: Given a matrix of integers, return the sum of each row in a single dimensional array.
+
+Resources:

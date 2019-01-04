@@ -150,6 +150,22 @@ namespace Pre_CodeChallenges
             Console.Clear();
             Console.WriteLine("Challenge 4: Sum of Rows");
 
+            Console.WriteLine("Please specifiy a matrix by giving the rows and columns of potential mulitdimensional array into the console below: ");
+            Console.WriteLine("Rows: ");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("Columns: ");
+            int columns = int.Parse(Console.ReadLine());
+
+            int[,] myArray = new int[rows, columns];
+            Random myRandom = new Random();
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    myArray[i, j] = myRandom.Next(-100, 100);
+                }
+            }
+
         }
 
     }
