@@ -18,6 +18,7 @@ namespace Pre_CodeChallenges
             Console.WriteLine("Choose an option: ");
             Console.WriteLine("1) Array Max Result");
             Console.WriteLine("2) Leap Year Calculator");
+            Console.WriteLine("3) Perfect Sequence");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -31,7 +32,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "3")
             {
-              
+                PerfectSequence();
                 return true;
             }
             else if (result == "4")
@@ -98,6 +99,49 @@ namespace Pre_CodeChallenges
             else
                 Console.WriteLine("Sorry, {0} is NOT a Leap Year.", number);
             Console.ReadLine();
+        }
+
+        private static void PerfectSequence()
+        {
+            Console.Clear();
+            Console.WriteLine("Challenge 3: Perfect Sequence");
+
+            Console.WriteLine("Input a sequence of 3 numbers below. After each single entry hit enter. ");
+            int sum = 0;
+            int multi = 1;
+
+            int[] sequenceArray = new int[3];
+            for (int i = 0; i < 3; i++)
+            {
+                sequenceArray[i] = int.Parse(Console.ReadLine());
+            }
+
+
+
+            for (int i = 0; i < sequenceArray.Length; i++)
+            {
+                sum += sequenceArray[i];
+                multi *= sequenceArray[i];
+            }
+            Console.WriteLine($"The sum of your sequence is {sum} and the product is {multi}");
+            if (sum < 0)
+            {
+                Console.WriteLine("No, this is not a perfect sequence.");
+                Console.ReadLine();
+            }
+            else if (sum == multi)
+            {
+                Console.WriteLine("Yes, this is a perfect sequence!");
+                Console.ReadLine();
+            }
+
+
+            else
+            {
+                Console.WriteLine("No, this is not a perfect sequence.");
+                Console.ReadLine();
+            }
+
         }
     }
 }
