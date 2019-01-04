@@ -27,3 +27,9 @@ https://www.youtube.com/watch?v=xX96xng7sAE
 ![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge2-negative-leap.PNG)
 
 ![SCREENSHOT](https://github.com/ntibbals/Prework-CodeChallenges/blob/master/Challenge2-negative-leap.PNG)
+
+###Problem 3: Perfect Sequence
+
+Instructions: Given an array o integers, return "yes" if the sequence is considered a perfect sequence. If it is considered a perfect sequence, return no.
+
+Resources:

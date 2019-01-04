@@ -18,6 +18,7 @@ namespace Pre_CodeChallenges
             Console.WriteLine("Choose an option: ");
             Console.WriteLine("1) Array Max Result");
             Console.WriteLine("2) Leap Year Calculator");
+            Console.WriteLine("3) Perfect Sequence");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -31,7 +32,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "3")
             {
-              
+                PerfectSequence();
                 return true;
             }
             else if (result == "4")
@@ -98,6 +99,11 @@ namespace Pre_CodeChallenges
             else
                 Console.WriteLine("Sorry, {0} is NOT a Leap Year.", number);
             Console.ReadLine();
+        }
+
+        private static void PerfectSequence()
+        {
+
         }
     }
 }
