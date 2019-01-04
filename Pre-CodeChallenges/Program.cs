@@ -19,6 +19,7 @@ namespace Pre_CodeChallenges
             Console.WriteLine("1) Array Max Result");
             Console.WriteLine("2) Leap Year Calculator");
             Console.WriteLine("3) Perfect Sequence");
+            Console.WriteLine("4) Sum of Rows");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -37,6 +38,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "4")
             {
+                SumOfRows();
                 return true;
             }
             else
@@ -143,5 +145,54 @@ namespace Pre_CodeChallenges
             }
 
         }
+        private static void SumOfRows()
+        {
+            Console.Clear();
+            Console.WriteLine("Challenge 4: Sum of Rows");
+
+            Console.WriteLine("Please specifiy a matrix by giving the rows and columns of potential mulitdimensional array into the console below: ");
+            Console.WriteLine("Rows: ");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("Columns: ");
+            int columns = int.Parse(Console.ReadLine());
+
+            int[,] myArray = new int[rows, columns];
+            Random myRandom = new Random();
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    myArray[i, j] = myRandom.Next(-100, 100);
+                }
+            }
+
+            Console.WriteLine("Your matrix is: ");
+            for (int i = 0; i < rows; i++)
+            {
+                Console.Write("{");
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{String.Join(", ", myArray[i, j])}, ");
+                }
+                Console.Write("} ");
+            }
+
+            int[] sumArray = new int[myArray.GetLength(0)];
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                int sum = 0;
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    sum += myArray[i, j];
+                }
+                sumArray[i] = sum;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"The sum of each row in your matrix is: [{String.Join(", ", sumArray)}]");
+            Console.ReadLine();
+        }
+
     }
 }
