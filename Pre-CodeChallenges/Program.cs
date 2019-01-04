@@ -17,6 +17,7 @@ namespace Pre_CodeChallenges
             Console.Clear();
             Console.WriteLine("Choose an option: ");
             Console.WriteLine("1) Array Max Result");
+            Console.WriteLine("2) Leap Year Calculator");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -25,7 +26,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "2")
             {
-               
+                LeapYearCalc();
                 return true;
             }
             else if (result == "3")
@@ -69,6 +70,34 @@ namespace Pre_CodeChallenges
             Console.WriteLine("Your score is {0}!", score);
             Console.ReadLine();
 
+        }
+        private static void LeapYearCalc()
+        {
+            Console.Clear();
+            Console.WriteLine("Challenge 2: Leap Year Calculator");
+
+            Console.WriteLine("What year would you like to look into being a Leap Year?");
+            string result = Console.ReadLine();
+            bool userInput = Int32.TryParse(result, out int number);
+
+            if (number % 400 == 0)
+            {
+                Console.WriteLine("Yes, {0} is in fact a Leap Year!", number);
+                Console.ReadLine();
+            }
+            else if (number % 100 == 0)
+            {
+                Console.WriteLine("Sorry, {0} is NOT a Leap Year.", number);
+                Console.ReadLine();
+            }
+            else if (number % 4 == 0)
+            {
+                Console.WriteLine("Yes, {0} is in fact a Leap Year!", number);
+                Console.ReadLine();
+            }
+            else
+                Console.WriteLine("Sorry, {0} is NOT a Leap Year.", number);
+            Console.ReadLine();
         }
     }
 }
