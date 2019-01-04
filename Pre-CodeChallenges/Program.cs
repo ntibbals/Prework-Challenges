@@ -19,6 +19,7 @@ namespace Pre_CodeChallenges
             Console.WriteLine("1) Array Max Result");
             Console.WriteLine("2) Leap Year Calculator");
             Console.WriteLine("3) Perfect Sequence");
+            Console.WriteLine("4) Sum of Rows");
             string result = Console.ReadLine();
             if (result == "1")
             {
@@ -37,6 +38,7 @@ namespace Pre_CodeChallenges
             }
             else if (result == "4")
             {
+                SumOfRows();
                 return true;
             }
             else
@@ -143,5 +145,12 @@ namespace Pre_CodeChallenges
             }
 
         }
+        private static void SumOfRows()
+        {
+            Console.Clear();
+            Console.WriteLine("Challenge 4: Sum of Rows");
+
+        }
+
     }
 }
