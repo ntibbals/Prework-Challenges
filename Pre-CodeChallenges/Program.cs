@@ -17,7 +17,7 @@ namespace Pre_CodeChallenges
             Console.Clear();
             Console.WriteLine("Choose an option: ");
             Console.WriteLine("1) Array Max Result");
-            Console.WriteLine("1) Array Max Result");
+            Console.WriteLine("2) Leap Year Calculator");
             string result = Console.ReadLine();
             if (result == "1")
             {
